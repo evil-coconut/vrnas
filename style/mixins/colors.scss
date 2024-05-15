@@ -1,0 +1,35 @@
+@mixin main-linear {
+    background: linear-gradient(90.00deg, rgb(12, 186, 241),rgb(233, 92, 233) 100%);;
+}
+@mixin main-purple {
+    background: rgb(202, 106, 235);
+}
+@mixin main-blue {
+    background: rgb(25, 181, 241);
+}
+//-----------------------------------
+@mixin alert-success-color {
+    background: rgb(0, 197, 102);
+}
+@mixin alert-error-color {
+    background: rgb(255, 71, 71);
+}
+@mixin alert-warning-color {
+    background: rgb(250, 204, 21);
+}
+//-----------------------------------
+@mixin black-100 {
+    background: rgb(24, 24, 27);
+}
+@mixin black-100 {
+    background: rgb(37, 37, 50)
+}
+@mixin grey-1 {
+    background: rgb(37, 37, 50)
+}
+@mixin grey-2 {
+    background: rgb(209, 209, 209);
+}
+@mixin white {
+    background: rgb(255, 255, 255);
+}
