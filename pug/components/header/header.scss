@@ -1,0 +1,17 @@
+@import "../nav/nav.scss";
+
+.header {
+    margin: 31px 119px;
+    &__container {
+        max-width: 1200px;
+        width: 100%;
+        height: 52px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {}
+    &__nav {}
+    &__button {}
+}

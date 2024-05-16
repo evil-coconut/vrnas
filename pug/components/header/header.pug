@@ -1,0 +1,56 @@
+include ../nav/nav.pug
+
+header.header 
+    .header__container 
+        .header__logo 
+            img(src="../../../public/logo.svg", alt="logo")
+        .header__nav 
+            +nav("row", [
+                {
+                    href: "#",
+                    text: "Home",
+                },
+                {
+                    href: "#",
+                    text: "About us",
+                },
+                {
+                    href: "#",
+                    text: "Service",
+                },
+                {
+                    href: "#",
+                    text: "Page",
+                    arrow: true,
+                    subm: [
+                        {
+                        href: "#",
+                        text: "blabla"
+                        }, 
+                        {
+                            href: "#",
+                            text: "blablabla"
+                        }
+                    ]
+                },
+                {
+                    href: "#",
+                    text: "Blog",
+                    arrow: true,
+                    subm: [
+                        {
+                        href: "#",
+                        text: "blabla"
+                        }, 
+                        {
+                            href: "#",
+                            text: "blablabla"
+                        },
+                        {
+                            href: "#",
+                            text: "blablablabla"
+                        }
+                    ]
+                }
+            ])
+        .header__button
