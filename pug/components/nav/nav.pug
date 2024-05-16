@@ -1,0 +1,17 @@
+mixin nav(style, arr)
+    -let showSubMenu=''
+    .nav 
+        div(class=`nav__container_${style}`)
+            each val in arr
+                if val.arrow == true 
+                    -showSubMenu='nav__link_show'
+                .nav__item
+                    a(href=val.href class=`nav__link ${showSubMenu}`)=val.text
+                        if val.arrow == true 
+                            .nav__arrow 
+                                img(src="../../../public/arrow.svg", alt="")
+                    if val.arrow == true 
+                        .nav__submenu
+                            each item in val.subm
+                                .nav__item
+                                    a(href=item.href class=`nav__link`)=item.text

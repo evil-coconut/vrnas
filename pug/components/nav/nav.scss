@@ -1,0 +1,49 @@
+@import "../../../style/mixins/typography.scss";
+@import "../../../style/mixins/colors.scss";
+
+.nav {
+    &__container_row {
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+    }
+    &__container_column {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column
+    }
+    &__link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 7px;
+        @include white-font;
+        @include body-1;
+    }
+    &__arrow {
+        width: 6px;
+        display: flex;
+
+    }
+    &__submenu {
+        display: none;
+        position: absolute;
+        top: 28px;
+        left: 0;
+        flex-direction: column;
+        gap: 8px;
+        width: 100px;
+        height: 80px;
+    }
+    &__link:hover {
+        font-weight: 500;
+    }
+    &__link_show:hover ~ .nav__submenu, &__submenu:hover{
+        display: flex;
+    }
+}
