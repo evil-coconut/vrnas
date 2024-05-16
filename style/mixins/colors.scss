@@ -33,3 +33,29 @@
 @mixin white {
     background: rgb(255, 255, 255);
 }
+//-----------------------------------
+@mixin main-linear-font {
+    color: linear-gradient(90.00deg, rgb(12, 186, 241),rgb(233, 92, 233) 100%);;
+}
+@mixin main-purple-font {
+    color: rgb(202, 106, 235);
+}
+@mixin main-blue-font {
+    color: rgb(25, 181, 241);
+}
+//-----------------------------------
+@mixin black-100-font {
+    color: rgb(24, 24, 27);
+}
+@mixin black-100-font {
+    color: rgb(37, 37, 50)
+}
+@mixin grey-1-font {
+    color: rgb(37, 37, 50)
+}
+@mixin grey-2-font {
+    color: rgb(209, 209, 209);
+}
+@mixin white-font {
+    color: rgb(255, 255, 255);
+}
